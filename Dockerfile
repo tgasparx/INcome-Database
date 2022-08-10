@@ -1,0 +1,6 @@
+FROM postgres
+ENV POSTRES_USER "admin"
+ENV POSTGRES_PASSWORD "123"
+ENV POSTGRES_DB "income"
+EXPOSE 5432
+RUN ./income.sql
